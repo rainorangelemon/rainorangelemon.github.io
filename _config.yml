@@ -10,7 +10,6 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint"
 # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -105,11 +104,11 @@ author:
   avatar           : "assets/images/bio-photo.JPG"
   bio              : "Another thinking reed."
   location         : "Nanjing, China"
-  email            : "151242062@smail.nju.edu.cn"
+  email            : # "151242062@smail.nju.edu.cn"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:151242062@smail.nju.edu.cn
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
