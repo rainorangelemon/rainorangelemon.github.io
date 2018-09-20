@@ -28,7 +28,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 ### Research Assistant, Michtom School of Computer Science
 
-*Brandeis University, supervised by Prof. Hongfu Liu*
+*Brandeis University*
 
 - Design a novel method for unsupervised feature selection, combing with clustering analysis andoutlier detection;- Implement the optimization code by Matlab independently;- Essay is in progress.
 
