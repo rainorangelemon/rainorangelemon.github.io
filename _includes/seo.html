@@ -7,11 +7,7 @@
 {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
 {%- if page.title -%}
-<<<<<<< HEAD
   {%- assign seo_title = ":-)" | append: " " | append: title_separator | append: " " | append: site.title -%}
-=======
-  {%- assign seo_title = append: site.title -%}
->>>>>>> ab78be6c20d3f4fc840af9bc70bb4f8cf561e3b1
 {%- endif -%}
 
 {%- if seo_title -%}
