@@ -6,8 +6,8 @@ main:
     url: /
   - title: "Interests"
     url: /Interests/
-  - title: "Blog"
-    url: https://blog.fishlemon.com 
+  # - title: "Blog"
+  #  url: https://blog.fishlemon.com 
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
