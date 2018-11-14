@@ -30,7 +30,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 *Brandeis University*
 
-- Design a novel method for unsupervised dual selection, combing with feature selection andoutlier detection jointly, which both contribute to the data structure as well;- Implement the optimization code by Matlab independently;- Essay is in progress.
+- Design a novel method for unsupervised dual selection, combing with feature selection andoutlier detection jointly, which both contribute to the data structure as well;- Implement the optimization code by Matlab independently;- Paper is in progress.
 
 ---
 
