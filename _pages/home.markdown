@@ -76,7 +76,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 	- Git, Docker- **Language:** 
 	- Chinese (Native)	- English (Fluent)
 		- TOEFL: 105 (Speaking: 24)
-		- GRE: 154(V)+170(Q)+4.0(AWA))- **OS:**
+		- GRE: 154(V)+170(Q)+4.0(AWA)- **OS:**
 	- Ubuntu
 	- OS X
 	- Windows
