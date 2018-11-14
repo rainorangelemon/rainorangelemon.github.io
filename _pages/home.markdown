@@ -13,7 +13,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 ### Nanjing University, Nanjing, China
 
-*B.Eng in Computer Acience and Technology (Honor Class, GPA: 91/100, Rank: 10/91)*
+*B.Eng in Computer Science and Technology (Honor Class, GPA: 3.9/4.0, Rank: 1/10)*
 
 - Core course: Discrete Mathematics, Data Structures, Algorithm Design and Abstract Algebra, Operating System, Principles of Compilers, Numerical Method
 
@@ -76,7 +76,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 	- Git, Docker- **Language:** 
 	- Chinese (Native)	- English (Fluent)
 		- TOEFL: 105 (Speaking: 24)
-		- GRE: 153(V)+170(Q)+4.0(AWA))- **OS:**
+		- GRE: 154(V)+170(Q)+4.0(AWA))- **OS:**
 	- Ubuntu
 	- OS X
 	- Windows
