@@ -6,14 +6,14 @@ date:   2018-09-19 13:19:52 -0400
 categories: jekyll update
 ---
 
-I am currently a visiting scholar at Brandeis University, focusing on unsupervised machine learning. After this six-month research, I will return to Nanjing University, and defend my bachelor degree there.
+I am currently a visiting scholar at Brandeis University, focusing on unsupervised machine learning. After this half year research, I will return to Nanjing University, and defend my bachelor degree there. Here is my latest [CV](/assets/CV_YCN.pdf).
 
 <a id="Education"/>
 ## Education
 
 ### Nanjing University, Nanjing, China
 
-*B.Eng in Computer Science and Technology (Honor Class, GPA: 3.9/4.0, Rank: 1/10)*
+*B.S. in Computer Science and Technology (Honor Class, GPA: **91/100**, Rank: **1/10**)*
 
 - Core course: Discrete Mathematics, Data Structures, Algorithm Design and Abstract Algebra, Operating System, Principles of Compilers, Numerical Method
 
@@ -71,13 +71,24 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 <a id="Skills"/>
 ## Skills
 - **Programming:** 
-	- Assembly, C/C++, Java, Python, MATLAB
+	- Assembly, C/C++, Java, Python (PyTorch & Jupyter Notebook), MATLAB
 	- HTML/CSS/JavaScript, SQL
-	- Git, Docker- **Language:** 
+	- Bash, Git, Docker
+	- Comments:
+		- Among these, I am most familiar with Python, Java and MATLAB.
+		- I use Git and HTML/CSS/JavaScript to build this website.- **Language:** 
 	- Chinese (Native)	- English (Fluent)
 		- TOEFL: 105 (Speaking: 24)
 		- GRE: 154(V)+170(Q)+4.0(AWA)- **OS:**
 	- Ubuntu
 	- OS X
 	- Windows
+
+- **Mathematics:**
+	- Probability Theory and Statistics
+	- Linear Algebra
+	- Calculus
+	- Number Theory
+	- Optimization Methods (e.g. Lagrangian Methods)
+	- Information Theory
 

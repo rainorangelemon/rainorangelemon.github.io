@@ -106,12 +106,9 @@ author:
   location         : "Nanjing, China"
   email            : # "151242062@smail.nju.edu.cn"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:151242062@smail.nju.edu.cn
-    - label: "Website"
+    - label: "CV"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "/assets/CV_YCN.pdf"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -121,6 +118,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rainorangelemon"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:151242062@smail.nju.edu.cn
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
