@@ -13,7 +13,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 ### Nanjing University, Nanjing, China
 
-*B.S. in Computer Science and Technology (Honor Class, GPA: **91/100**, Rank: **1/10**)*
+*B.S. in Computer Science, [K.Y. Honors School](https://www.nju.edu.cn/EN/7f/6e/c7136a163694/page.htm) (GPA: **91/100**, Rank: **1/10**)*
 
 - Core course: Discrete Mathematics, Data Structures, Algorithm Design and Abstract Algebra, Operating System, Principles of Compilers, Numerical Method
 
@@ -30,7 +30,7 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 *Brandeis University*
 
-- Design a novel method for unsupervised dual selection, combing with feature selection andoutlier detection jointly, which both contribute to the data structure as well;- Implement the optimization code by Matlab independently;- Paper is in progress.
+- Design a novel method for unsupervised dual selection, combing with feature selection andoutlier detection jointly, which both contribute to the data structure as well;- Implement the optimization code by Matlab independently;- Manuscript is in progress, aiming for IJCAI-19.
 
 ---
 
@@ -65,8 +65,8 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 
 <a id="Awards"/>
 ## Awards
-- Second Prize, *National Elite Program Scholarship (Top 15%)*
 - Second Prize, *Career Planning Competition at College*
+- Second Prize, *National Elite Program Scholarship (Top 15%)*
 
 <a id="Skills"/>
 ## Skills
@@ -82,12 +82,3 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 		- GRE: 154(V)+170(Q)+4.0(AWA)- **OS:**
 	- Ubuntu
 	- OS X
-
-- **Mathematics:**
-	- Probability Theory and Statistics
-	- Linear Algebra
-	- Calculus
-	- Number Theory
-	- Optimization Methods (e.g. Lagrangian Methods)
-	- Information Theory
-
