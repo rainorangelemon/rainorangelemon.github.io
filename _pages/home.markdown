@@ -82,7 +82,6 @@ I am currently a visiting scholar at Brandeis University, focusing on unsupervis
 		- GRE: 154(V)+170(Q)+4.0(AWA)- **OS:**
 	- Ubuntu
 	- OS X
-	- Windows
 
 - **Mathematics:**
 	- Probability Theory and Statistics
