@@ -6,7 +6,7 @@ date:   2018-09-19 13:19:52 -0400
 categories: jekyll update
 ---
 
-I am currently a visiting scholar at Brandeis University, focusing on unsupervised machine learning. After this half year research, I will return to Nanjing University, and defend my bachelor degree there. Here is my latest [CV](/assets/CV_YCN.pdf).
+I am a undergraduated senior honor student who majors in Computer Science at Nanjing University. Here is my latest [CV](/assets/CV_YCN.pdf). More details are listed below.
 
 <a id="Education"/>
 ## Education
