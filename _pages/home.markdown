@@ -13,7 +13,9 @@ I am a undergraduated senior honor student who majors in Computer Science at Nan
 
 ### Nanjing University, Nanjing, China
 
-*B.S. in Computer Science, [K.Y. Honors School](https://www.nju.edu.cn/EN/7f/6e/c7136a163694/page.htm) (GPA: **91/100**, Rank: **1/10**)*
+*B.S. in Computer Science, Sept.2015-Present*
+
+- [K.Y. Honors School](https://www.nju.edu.cn/EN/7f/6e/c7136a163694/page.htm) (GPA: **91/100**, Rank: **1/10**)
 
 - Core course: Discrete Mathematics, Data Structures, Algorithm Design and Abstract Algebra, Operating System, Principles of Compilers, Numerical Method
 
@@ -21,46 +23,49 @@ I am a undergraduated senior honor student who majors in Computer Science at Nan
 
 ### Duke University, North Carolina, USA
 
-*Semester Exchange*- Core Course: Introduction to Cryptography, Software Design and Implementation
+*Semester Exchange, Aug.2017-Dec.2017*- Core Course: Introduction to Cryptography, Software Design and Implementation
 
 <a id="Research"/>
 ## Research Experience
 
 ### Research Assistant, Michtom School of Computer Science
 
-*Brandeis University*
+*Brandeis University, Supervised by Prof. Hongfu Liu, July.2018-Dec.2018*
 
-- Design a novel method for unsupervised dual selection, combing with feature selection andoutlier detection jointly, which both contribute to the data structure as well;- Implement the optimization code by Matlab independently;- Manuscript is in progress, aiming for IJCAI-19.
+- Independently designed a novel method, unsupervised dual selection, which conducts feature selection and outlier detection jointly for a clean representation of data
+- Implemented the optimization strategy by MATLAB, currently testing it on about eighty image, text and med- ical data sets, such as Yale Face Dataset, WebKB Dataset, and Lung Cancer Dataset
 
 ---
 
 ### Research Assistant, LAMDA Group
 
-*Nanjing University, supervised by Prof. Yuan Jiang* 
+*Nanjing University, Supervised by Prof. Yuan Jiang, Feb.2017-Present* 
 
-- Joined in the design and development issue of document retrieval system;- Proposed a new method about crawling web and retrieving scientific PDFs given specific titles with above 95% accuracy;- Expected to classify paragraphs of scientific PDFs into titles, authors, abstract, and others etc.
+- Joined in the design and development issue of academic article retrieval system- Took the duty of one of the core parts, which is to automatically retrieve basic information of scientific PDFs
+
+- Built an automatic web crawler to search for the target article given target titles- Successfully proposed a model to classify paragraphs into basic information labels with above 95% accuracy
 
 <a id="Project"/>
 ## Project Experience
 
 ### Pokemon Maker: A Platform to Customize Pokemon Game
 
-*Duke University, Designer & Developer*
+*Duke University, Designer & Developer, Oct.2017-Dec.2017*
 
-- Realized the GUI, such as menus, sidebars and choice boxed, to change attributes and skills of Pokemon;
+- Refined the GUI, such as menus and choice boxes, to change attributes and skills of Pokémon
 
-- Dealt with the game logic about refreshing the map; moving NPCs in the map;
+- Dealt with the game logic about refreshing maps, moving NPC in maps, buying potions and unlocking plots
 
-- Collected and analyzed the advices from test players;
+- Made iterative improvement by collection of over 200 suggestions given by teammates and test players
 
-- Improved skills to communicate with other seven team mates, and mastered Git.
+- Learned communication skills while cooperating with other seven teammates, and mastered Git
 
 ---
 
 ### NEMU: An X86 Simulator on Ubuntu Linux System
 
-*Nanjing University, Designer & Developer*
-- Implemented typical debugging functions like single stepping, breakpoint, expression evaluation andwatch point;- Simulated multiple basic commands in 80386, paged segmentation in cache, interruption and I/O;- Learned to write Makefiles and shells, to better organize the compiling order of head and source Cfiles.
+*Nanjing University, Designer & Developer, Sept.2016-Jan.2017*
+- Implemented typical debugging functions like single stepping, breakpoint, expression evaluation andwatch point- Simulated multiple basic commands in 80386, paged segmentation in cache, interruption and I/O- Learned to write Makefiles and shells, to better organize the compiling order of head and source Cfiles
 
 
 <a id="Awards"/>

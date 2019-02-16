@@ -32,7 +32,7 @@ In my free time, I like to:
 
 ## Future Plan
 
-- To be honest, I am still considering whether to go to company or stay in school, after I finish my study.
+- To be honest, I am still considering whether to go to company or stay in the academia, after I finish my study.
 
 - Some friends of mine are quite straight. They want to make big money, so they go for a master degree, and search for jobs in [FLAG](https://www.urbandictionary.com/define.php?term=FLAG%20Companies).
 
