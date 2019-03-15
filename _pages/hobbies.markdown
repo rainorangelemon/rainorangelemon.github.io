@@ -18,7 +18,7 @@ In my free time, I like to:
 	
 - Learn new languages (both natural and programming)
 	
-- Write [blogs](https://blog.fishlemon.com)
+- Write diary
 
 - Running (5km average)
 
