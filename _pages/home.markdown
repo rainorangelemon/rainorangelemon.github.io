@@ -21,10 +21,6 @@ I am a undergraduated senior honor student who majors in Computer Science at Nan
 
 ---
 
-### Duke University, North Carolina, USA
-
-*Semester Exchange, Aug.2017-Dec.2017*- Core Course: Introduction to Cryptography, Software Design and Implementation
-
 <a id="Research"/>
 ## Research Experience
 
