@@ -61,14 +61,26 @@
               <a href="http://rainorangelemon.github.io/NeurIPS2021">website</a> -->
             </td>
           </tr>            
-          <tr>
+          <tr onmouseout="cam_stop()" onmouseover="cam_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <video width="160" height="160" playsinline loop autoplay muted>
-                  <source src="images/chasing.mp4" type="video/mp4"></source>
-                </video>
+                <div class="two" id='cam_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/chasing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/chasing.png' width="160">
               </div>
-            </td>            
+              <script type="text/javascript">
+                function cam_start() {
+                  document.getElementById('cam_image').style.opacity = "1";
+                }
+
+                function cam_stop() {
+                  document.getElementById('cam_image').style.opacity = "0";
+                }
+                cam_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:top">
               <a href="https://openreview.net/forum?id=xC-68ANJeK_">
                 <papertitle>Learning Control Admissibility Models with Graph Neural Networks for Multi-Agent Navigation</papertitle>
