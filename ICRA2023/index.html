@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Control Admissibility Model decouples the properties of goal-reaching and collision avoidance, and is compositional which enables generalization to challengingly high density of agents.">
+  <meta name="keywords" content="Multi-Agent, GNN, Graph Transformer, Planning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Graph Transformer for Multi-Agent Planning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/maze.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://rainorangelemon.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://rainorangelemon.github.io/CoRL2022/">
+            CoRL'22: Learning Control Admissibility Models with Graph Neural Networks for Multi-Agent Navigation
+          </a>              
+          <a class="navbar-item" href="https://ruipengz.github.io/neurips22/">
+            NeurIPS'22: Learning-based Motion Planning in Dynamic Environments Using GNNs and Temporal Encoding
+          </a>
+          <a class="navbar-item" href="https://rainorangelemon.github.io/NeurIPS2021/">
+            NeurIPS'21: Reducing Collision Checking for Sampling-Based Motion Planning Using Graph Neural Networks
+          </a>        
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Accelerating Multi-Agent Planning Using Graph Transformers with Bounded Suboptimality</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://rainorangelemon.github.io">Chenning Yu</a>*<sup>,1</sup>,</span>
+            <span class="author-block">
+              <a href="https://qingbiaoli.github.io/">Qingbiao Li</a>*<sup>,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scungao.github.io">Sicun Gao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              and <a href="https://www.cst.cam.ac.uk/people/asp45">Amanda Prorok</a><sup>2</sup>
+            </span>            
+          </div>
+
+          <h7 class="text-center">
+            <sup>1 </sup>UC San Diego &nbsp;&nbsp;&nbsp;&nbsp;<sup>2 </sup>University of Cambridge
+          </h7>          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- <span class="link-block">
+                <a href="https://github.com/rainorangelemon/pytorch_geometric_multiagent"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="hero-body">
+            <iframe width="640" height="360" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/__wHIRNjjWI" title="Accelerating Multi-Agent Planning using Graph Transformers with Near-Optimal Guarantees" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2 class="subtitle has-text-centered">
+                <span class="dnerf">Graph Transformer</span> serves a heuristic function to accelerate multi-agent planning.
+            </h2>
+      </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Conflict-Based Search is one of the most popular methods for multi-agent path finding. Though it is complete and optimal, it does not scale well. Recent works have been proposed to accelerate it by introducing various heuristics. However, whether these heuristics can apply to non-grid-based problem settings while maintaining their effectiveness remains an open question. In this work, we find that the answer is prone to be no.
+          </p>
+          <p>
+            To this end, we propose a learning-based component, i.e., the Graph Transformer, as a heuristic function to accelerate the planning. The proposed method is provably complete and bounded-suboptimal with any desired factor. 
+          </p>
+          <p>
+            We conduct extensive experiments on two environments with dense graphs. Results show that the proposed Graph Transformer can be trained in problem instances with relatively few agents and generalizes well to a larger number of agents, while achieving better performance than state-of-the-art methods.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--<div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>-->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- <div class="columns is-centered">
+            <div class="column">
+                <div class="content">
+                    <h2 class="title is-3">Proof-of-Concept</h2>
+                    <p>
+                        We introduce Control Admissibility Model, which approximates the invariant set for safety and is aware of future consequences.
+                    </p>
+                    <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                        <source src="https://cseweb.ucsd.edu/~chy010/videos/CoRL22/dydubins_short.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <h2 class="title is-3">Robot Arms</h2>
+                    <p>
+                        Defining the observations as graphs, our method can be applied to higher dimensional multi-agent navigation tasks with complex configuration space.
+                    </p>
+                    <video id="matting-video" autoplay controls muted loop playsinline width="100%">
+                        <source src="https://cseweb.ucsd.edu/~chy010/videos/CoRL22/robot_arm.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Maze Environments</h2>
+            </div>
+        </div>                
+                <div class="shero-body">
+                    <div class="container">
+                        <div id="results-carousel" class="carousel results-carousel">
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">8 Agents</h3>
+                                </div>
+                                <div class="item item-maze8">
+                                    <video poster="" id="maze8" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/MazeEnv_2139.mp4"
+                                                type="video/mp4">
+                                    </video><br />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">14 Agents</h3>
+                                </div>
+                                <div class="item item-maze14">
+                                    <video poster="" id="maze14" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/MazeEnv_1393.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">20 Agents</h3>
+                                </div>
+                                <div class="item item-maze20">
+                                    <video poster="" id="maze20" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/MazeEnv_2901.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">26 Agents</h3>
+                                </div>
+                                <div class="item item-maze26">
+                                    <video poster="" id="maze26" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/MazeEnv_644.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        <!-- Dynamic Dubins -->
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Box Environments</h2>
+            </div>
+        </div>                
+                <div class="shero-body">
+                    <div class="container">
+                        <div id="results-carousel" class="carousel results-carousel">
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">4 Agents</h3>
+                                </div>
+                                <div class="item item-box4">
+                                    <video poster="" id="box4" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/BoxEnv_2458.mp4"
+                                                type="video/mp4">
+                                    </video><br />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">6 Agents</h3>
+                                </div>
+                                <div class="item item-box6">
+                                    <video poster="" id="box6" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/BoxEnv_2443.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">8 Agents</h3>
+                                </div>
+                                <div class="item item-box8">
+                                    <video poster="" id="box8" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/BoxEnv_1458.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="content has-text-centered">
+                                    <h3 class="title is-4">10 Agents</h3>
+                                </div>
+                                <div class="item item-box10">
+                                    <video poster="" id="box10" autoplay controls muted loop playsinline height="70%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/ICRA2023/BoxEnv_1961.mp4"
+                                                type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Animation. -->
+        <!-- <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3">Zero-Shot Transfer to Chasing Game</h2>
+            </div>
+        </div>
+                <div class="content has-text-justified">
+                    <p>
+                        Zero-shot transfering the learned CAM to a new task, where each agent is required to chase another agent with no collision.
+                    </p>
+                </div>
+                <div class="shero-body">
+                    <div class="columns is-centered">
+                            <div class="column">
+                                    <div class="content has-text-centered">
+                                        <h3 class="title is-4">16 Agents (Bird's-Eye View in 3D space)</h3>
+                                    </div>
+                                    <video poster="" id="chasing16" autoplay controls muted loop playsinline height="100%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/CoRL22/chasing_16.mp4"
+                                                type="video/mp4">
+                                    </video>
+                            </div>
+                            <div class="column">
+                                    <div class="content has-text-centered">
+                                        <h3 class="title is-4">64 Agents (Bird's-Eye View in 3D space)</h3>
+                                    </div>
+                                    <video poster="" id="chasing64" autoplay controls muted loop playsinline height="100ss%">
+                                        <source src="https://cseweb.ucsd.edu/~chy010/videos/CoRL22/chasing_64.mp4"
+                                                type="video/mp4">
+                                    </video>
+                            </div>
+                    </div>
+                </div> -->
+                <!-- </div> -->
+</section>
+
+
+<!-- <section class="section" id="BibTeX"> -->
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{https://doi.org/10.48550/arxiv.2301.08451,
+        doi = {10.48550/ARXIV.2301.08451},
+        url = {https://arxiv.org/abs/2301.08451},
+        author = {Yu, Chenning and Li, Qingbiao and Gao, Sicun and Prorok, Amanda},
+        keywords = {Artificial Intelligence (cs.AI), Machine Learning (cs.LG), Multiagent Systems (cs.MA), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+        title = {Accelerating Multi-Agent Planning Using Graph Transformers with Bounded Suboptimality},
+        publisher = {arXiv},
+        year = {2023},
+        copyright = {arXiv.org perpetual, non-exclusive license}
+      }</code></pre>
+  </div>
+<!-- </section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            We sincerely thank <a href="https://keunhong.com">Keunhong Park</a> for open-sourcing the <a href="https://github.com/nerfies/nerfies.github.io">website template</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
